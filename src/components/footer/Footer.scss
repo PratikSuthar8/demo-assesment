@@ -1,0 +1,72 @@
+@import "../colors.scss";
+
+.footer {
+	background-color: $blue; /* Ensure $blue is defined in colors.scss */
+	color: white;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	.brand {
+		margin-right: 30px;
+	}
+
+	.footer-content {
+		margin: 25px 0;
+		border-top: 1px solid gray;
+		border-bottom: 2px solid gray;
+		width: 80%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.footer-links {
+			display: flex;
+			gap: 40px;
+		}
+
+		.footer-section {
+			margin: 10px;
+
+			&.company {
+				display: flex;
+				align-items: center;
+
+				.footer-logo {
+					margin-right: 10px;
+					height: auto;
+				}
+
+				p {
+					margin: 0;
+				}
+			}
+
+			&.links {
+				h4 {
+					margin: 0 0 10px 0;
+					font-size: 16px;
+				}
+
+				ul {
+					list-style-type: none;
+					padding: 0;
+					margin: 0;
+
+					li {
+						margin-bottom: 5px;
+					}
+				}
+			}
+
+			&.social-media {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+			}
+		}
+	}
+}

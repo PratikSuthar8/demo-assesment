@@ -1,0 +1,72 @@
+@import "../colors.scss";
+
+.about {
+	margin-bottom: 100px;
+	.about-container {
+		margin: 100px;
+		display: flex;
+		justify-content: space-between;
+		gap: 40px;
+		.text-box {
+			width: 600px;
+			height: 1px;
+			h1 {
+				font-size: 38px;
+				font-weight: 700;
+				line-height: 40px;
+				margin-bottom: 40px;
+				span {
+					color: $dark-blue;
+				}
+			}
+			p {
+				font-weight: 300;
+				font-size: 17px;
+				line-height: 28px;
+			}
+			button {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				border: none;
+				border-radius: 5px;
+				font-size: 18px;
+				color: $white;
+				font-weight: 700;
+				background: $green;
+				width: 315px;
+				height: 55px;
+				margin-top: 40px;
+			}
+		}
+		.btn-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+			button {
+				font-family: "Inter", sans-serif;
+				font-size: 18px;
+				line-height: 32px;
+				font-weight: 500;
+				position: relative;
+				width: 260px;
+				height: 65px;
+				border-radius: 5px;
+				border: 2px solid $orange;
+				background: $white;
+				transition: all 0.2s ease-in-out;
+				&:hover {
+					color: $white;
+					background: $orange;
+				}
+				&:hover::after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: auto;
+					background-image: url("../../assets/RightArrow.svg");
+				}
+			}
+		}
+	}
+}

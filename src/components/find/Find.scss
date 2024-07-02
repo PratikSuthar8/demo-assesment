@@ -1,0 +1,26 @@
+@import "../colors.scss";
+.find {
+	padding: 0 180px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: $light-blue;
+	h1 {
+		font-size: 37px;
+		line-height: 40px;
+		span {
+			border-bottom: 4px solid $orange;
+		}
+	}
+	button {
+		border: none;
+		border-radius: 5px;
+		background: $orange;
+		color: $white;
+		width: 220px;
+		height: 55px;
+		font-size: 18px;
+		font-weight: 700;
+	}
+}

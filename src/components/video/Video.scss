@@ -1,0 +1,59 @@
+@import "../colors.scss";
+
+.video-container {
+	margin: 200px 100px;
+	.inner-container {
+		padding: 100px 50px;
+		display: flex;
+		justify-content: space-between;
+		border-radius: 5px;
+		background: $blue;
+		.video {
+			iframe {
+				margin-bottom: 0;
+				border-radius: 5px;
+			}
+		}
+		.text-box {
+			display: flex;
+			flex-direction: column;
+			margin-left: 40px;
+			.headers {
+				display: flex;
+				align-items: center;
+				gap: 40px;
+				button {
+					margin-bottom: 20px;
+					font-size: 26px;
+					padding: 10px 40px;
+					font-weight: 700;
+					line-height: 32px;
+					background: none;
+					border: none;
+				}
+				.buyers {
+					color: $orange;
+					border-bottom: $orange 3px solid;
+				}
+				.supplier {
+					color: $white;
+				}
+			}
+			.list {
+				margin-left: 40px;
+				color: $white;
+				.list-items {
+					list-style-image: url("../../assets/checked.svg");
+
+					.list-links {
+						padding-left: 10px;
+						position: relative;
+						font-weight: 500;
+						font-size: 19px;
+						line-height: 2;
+					}
+				}
+			}
+		}
+	}
+}
